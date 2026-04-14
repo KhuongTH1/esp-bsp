@@ -19,7 +19,6 @@ dependencies:
   espressif/esp_lvgl_port:
     version: "^2"
     public:  true
-    override_path: "../../components/esp_lvgl_port"
 
   espressif/esp_lcd_st77916:
     version: "*"
@@ -28,7 +27,6 @@ dependencies:
   espressif/esp_lcd_touch_cst816s:
     version: "*"
     public:  false
-    override_path: "../../components/lcd_touch/esp_lcd_touch_cst816s"
 
   button:
     version: "^4"
