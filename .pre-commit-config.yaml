@@ -159,3 +159,6 @@ repos:
       - id: doxygen-api-md
         args: ["--template-dir", "docu/doxyfiles/templates", "--doxygen-extra-args", "docu/doxyfiles/esp_vocat", "-i", "bsp/esp_vocat/doxygen/xml", "-o", "bsp/esp_vocat/API.md"]
         files: ^bsp/esp_vocat/
+      - id: doxygen-api-md
+        args: ["--template-dir", "docu/doxyfiles/templates", "--doxygen-extra-args", "docu/doxyfiles/esp_echocat", "-i", "bsp/esp_echocat/doxygen/xml", "-o", "bsp/esp_echocat/API.md"]
+        files: ^bsp/esp_echocat/
