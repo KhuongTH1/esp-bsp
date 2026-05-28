@@ -105,7 +105,7 @@ esp_codec_dev_handle_t bsp_audio_codec_speaker_init(void)
     }
     assert(i2s_data_if);
     /* Enable Feature */
-    //BSP_ERROR_CHECK_RETURN_NULL(bsp_feature_enable(BSP_FEATURE_SPEAKER, true));
+    BSP_ERROR_CHECK_RETURN_NULL(bsp_feature_enable(BSP_FEATURE_SPEAKER, true));
 
     const audio_codec_gpio_if_t *gpio_if = audio_codec_new_gpio();
 
@@ -155,7 +155,7 @@ esp_codec_dev_handle_t bsp_audio_codec_microphone_init(void)
     }
     assert(i2s_data_if);
     /* Enable Feature */
-    //BSP_ERROR_CHECK_RETURN_NULL(bsp_feature_enable(BSP_FEATURE_MIC, true));
+    BSP_ERROR_CHECK_RETURN_NULL(bsp_feature_enable(BSP_FEATURE_MIC, true));
 
     audio_codec_i2c_cfg_t i2c_cfg = {
         .port = BSP_I2C_NUM,
